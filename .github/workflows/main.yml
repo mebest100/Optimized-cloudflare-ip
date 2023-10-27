@@ -5,14 +5,14 @@ permissions:
 
 on:
   schedule:
-    - cron: "0 0 * * *" # every day 8:00
+    - cron: "31 9 * * *" # every day 8:00
   workflow_dispatch:
 
 jobs:
   sync_latest_from_upstream:
     name: Sync latest commits from upstream repo
     runs-on: ubuntu-latest
-    if: ${{ github.event.repository.fork }}
+    #if: ${{ github.event.repository.fork }}
 
     steps:
       # Step 1: run a standard checkout action
