@@ -1,4 +1,4 @@
-name: Upstream Sync And Generate
+name: Sync and Generate new Cloudflare IP
 
 permissions:
   contents: write
